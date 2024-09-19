@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        max-width:500px;
+        margin:50px auto;
+        background-image:url('image/beach-sea-18378306.jpg');
+        padding:20px;
+        background-color: mediumorchid;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        float: center;
+        background-repeat: repeat-y;
+
+    }
+    body{
+        background-color: #f4f4f4
+    }
+    h2{
+        text-align: center;
+    }
+    .form-group{
+        margin-bottom:15px;
+    }
+    label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+        margin:5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button{
+        width:100%;
+        padding:10px;
+        background-color: #28a745;
+        color:white;
+        border:none;
+        border-radius:4px;
+        cursor:pointer;
+        font-size: 16px;
+    }
+    button:hover{
+        background-color: #218838;
+    }
+    #but{
+        background-color: antiquewhite;
+        color:black;
+    }
+    #but:hover{
+        background-color: bisque;
+    }
+    @media screen and (maxwidth:480px){
+        .container{
+            width: 80%;
+            padding: 10px;
+        }
+        input[type="text"],input[type="email"]{
+            font-size: 1em;
+            padding: 8px;
+        }
+        h2{
+            font-size: 1.5em;
+            text-align: center;
+        }
+        button{
+            font-size: 1em;
+            padding: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <form class="container">
+        <fieldset>
+        <h2 style="text-align:center;">Personal Details</h2>
+        <div class="form-group">
+        <label for="one"><b>First Name:</b></label><br>
+        <input type="text" id="one"><br></div>
+        <label for="last name"><b>Last Name:</b></label><br>
+        <input type="text" id="last name"><br>
+        <label for="nick name"><b>Nick Name:</b></label><br>
+        <input type="text" id="nick name"><br>
+        <label for="mail"><b>e-mail:</b></label><br>
+        <input type="email" id="mail"><br>
+        <label for="password"><b>password:</b></label><br>
+        <input type="password" id="password"><br>
+        <label for="dob"><b>Date of Birth:</b></label><br>
+        <input type="text" id="dob"><br>
+        <label for="gender"><b>Gender:</b></label><br>
+        <input type="radio"  name="gg"><label>Male</label><br>
+        <input type="radio"  name="gg"><label>Female</label><br>
+        <input type="radio"  name="gg"><label>Others</label><br><br>
+        <label for="mobile"><b>Mobile:</b></label><br>
+        <input type="number" id="mobile"><br>
+        <label for="address"><b>Address:</b></label><br>
+        <textarea id="address" rows="3" cols="40"></textarea><br><br>
+        <label for="hobby"><b>Hobbies:</b></label><br>&nbsp;
+        <input type="checkbox"><label>Painting</label><br>&nbsp;
+        <input type="checkbox"><label>Singing</label><br>&nbsp;
+        <input type="checkbox"><label>Reading</label><br>&nbsp;
+        <input type="checkbox"><label>Dancing</label><br><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city"><br><br>
+        <button type="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="reset">Reset</button>
+        <a href="index.html" style="text-align: center;">Go to login page</a>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
